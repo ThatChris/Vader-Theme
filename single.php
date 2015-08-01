@@ -33,7 +33,10 @@
 					<p class="post-date">
 					
 						<a href="<?php the_permalink(); ?>" title="<?php the_time('h:i'); ?>"><?php the_time(get_option('date_format')); ?></a>
-						
+<!--TCB Adding Category Support --><br />
+		<?php if (has_category()) : ?>				
+			<p><?php _e('Filed under: ','rams'); ?><?php the_category(', '); ?></p><br />
+		<?php endif; ?>
 					</p>
 											
 					<h2 class="post-title"><?php the_title(); ?></h2>
@@ -63,7 +66,6 @@
 	    	
 	    		wp_link_pages($args); 
 			?>
-			
 		</div> <!-- /post -->
 				
 		<div class="comments-container">
@@ -77,7 +79,6 @@
 		<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "rams"); ?></p>
 	
 	<?php endif; ?>    
-
 </div> <!-- /content -->
 		
 <?php get_footer(); ?>
