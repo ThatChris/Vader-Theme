@@ -74,7 +74,7 @@
 					} ?>
 					
 				 </ul>
-				 
+				<!-- TCB Added blog description and Copyright notice --> 
 				 <p class="credits"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?><br /><?php _e('Copyright &copy; 2015','rams'); ?></p>
 				
 				 <div class="clear"></div>
