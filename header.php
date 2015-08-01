@@ -75,7 +75,7 @@
 					
 				 </ul>
 				 
-				 <p class="credits"><?php _e('Theme by','rams'); ?> <a href="http://www.andersnoren.se">Anders Nor&eacute;n</a></p>
+				 <p class="credits"><?php _e('Copyright &copy; 2015','rams'); ?></p>
 				
 				 <div class="clear"></div>
 			
