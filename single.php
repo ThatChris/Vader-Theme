@@ -33,7 +33,7 @@
 					<p class="post-date">
 					
 						<a href="<?php the_permalink(); ?>" title="<?php the_time('h:i'); ?>"><?php the_time(get_option('date_format')); ?></a>
-<!--TCB Adding Category Support --><br />
+<!--TCB Adding Categories Support --><br />
 		<?php if (has_category()) : ?>				
 			<p><?php _e('Filed under: ','rams'); ?><?php the_category(', '); ?></p><br />
 		<?php endif; ?>
