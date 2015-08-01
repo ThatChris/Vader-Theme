@@ -28,7 +28,7 @@
 				<?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
 			
 					<h1 class="blog-title">
-						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
+						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a><br />
 					</h1>
 					
 				<?php endif; ?>
@@ -75,7 +75,7 @@
 					
 				 </ul>
 				 
-				 <p class="credits"><?php _e('Copyright &copy; 2015','rams'); ?></p>
+				 <p class="credits"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?><br /><?php _e('Copyright &copy; 2015','rams'); ?></p>
 				
 				 <div class="clear"></div>
 			
